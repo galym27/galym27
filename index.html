@@ -1,13 +1,101 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My Webpage</title>
-    </head>
-    <body>
-        Hello, world!
-        making a change in master branch
-        Testing the commit command
-        doing things in new branch
-        I DECIDED TO KEEP BOTH CHANGES
-    </body>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+    @media (max-width: 500px) {
+        .screen-only {
+            display: none;
+        }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Main</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron jumbotron-fluid text-center text-white" style="background-image: url(img/main/alua1.jpg); background-size: cover;">
+    <div class="container">
+      <h1>Welcome<span class="screen-only"> to home page of Mutaliyev's Family</span>! </h1>
+      <p>Browse through photo albums, stories and other pages of the website</p>
+    </div>
+  </div>
+  <div class="container-fluid pt-3 my-3 bg-dark text-white text-center">
+  <h4>Family members</h4>
+    <p>Tap on icons to view more photos</p>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card bg-secondary text-white border-light" style="width:100%">
+          <img class="card-img-top" src="img/main/parents.jpg" alt="Ussen & Aliya" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Ussen and Aliya</h4>
+            <p class="card-text">Parents to Alibek, Galymzhan and Dosbol, Ussen and Aliya got married in 1984 in the city of Shymkent.</p>
+            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+          </div>
+       </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card bg-secondary text-white border-light" style="width:100%">
+          <img class="card-img-top" src="img/main/alibek.jpg" alt="Alibek & Karina" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Alibek and Karina</h4>
+            <p class="card-text">Parents to 3 kids - Alina, Aruzhan, Altair - got married in 2007 in the city of Shymkent</p>
+            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+          </div>
+       </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card bg-secondary text-white border-light" style="width:100%">
+          <img class="card-img-top" src="img/main/galymzhan2.jpg" alt="Galymzhan & Zhanara" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Galymzhan and Zhanara</h4>
+            <p class="card-text">Parents of Alua and Togzhan, got married in 2016 in the city of Shymkent</p>
+            <a href="galymzhan.html" class="btn btn-primary stretched-link">See Profile</a>
+          </div>
+       </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card bg-secondary text-white border-light" style="width:100%">
+          <img class="card-img-top" src="img/main/dosbol.jpg" alt="Dosbol" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Dosbol</h4>
+            <p class="card-text">Youngest son of Ussen and Aliya, was born in 1998; graduated from university in 2019 </p>
+            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+          </div>
+       </div>
+      </div>
+    </div>
+    <!-- <p>"this is to facilitate a bottom margin" <br>
+    "this is to facilitate a bottom margin" </p> -->
+  </div>
+</body>
 </html>
