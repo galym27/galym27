@@ -14,14 +14,40 @@
             display: none;
         }
     }
-  </style>
+    .carousel-caption {
+    top: 0;
+    bottom: auto;
+    }
+    /*
+    Extra small devices (portrait phones, less than 544px)
+    No media query since this is the default in Bootstrap because it is "mobile first"
+    */
+    h1 {font-size:1rem;} /*1rem = 16px*/
+    /* Small devices (landscape phones, 544px and up) */
+    @media (min-width: 544px) {
+      h1 {font-size:1.5rem;} /*1rem = 16px*/
+    }
+    /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+    @media (min-width: 768px) {
+      h1 {font-size:2rem;} /*1rem = 16px*/
+    }
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+      h1 {font-size:2.5rem;} /*1rem = 16px*/
+    }
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+      h1 {font-size:3rem;} /*1rem = 16px*/
+    }
+
+    </style>
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <!-- Brand -->
-    <a class="navbar-brand" href="#">Main</a>
+    <a class="navbar-brand" href="index.html">Main</a>
 
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -32,64 +58,65 @@
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="parents.html">Ussen & Aliya</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="alibek.html">Alibek & Karina</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="galymzhan.html">Galymzhan & Zhanara</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dosbol.html">Dosbol</a>
         </li>
       </ul>
     </div>
   </nav>
-  <div class="jumbotron jumbotron-fluid text-center text-white" style="background-image: url(img/main/alua1.jpg); background-size: cover;">
-    <div class="container">
-      <h1>Welcome<span class="screen-only"> to home page of Mutaliyev's Family</span>! </h1>
-      <p>Browse through photo albums, stories and other pages of the website</p>
-    </div>
-  </div>
-  <div class="container-fluid pt-3 my-3 bg-dark text-white text-center">
-  <h4>Family members</h4>
-    <p>Tap on icons to view more photos</p>
+
+  <div class="container-fluid pt-3 my-0 bg-dark text-white text-center">
+  <h4>The Story of Dosbol</h4> <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
+  <br>
+  <h4>Places visited</h4> <br>
     <div class="row">
       <div class="col-sm-3">
         <div class="card bg-secondary text-white border-light" style="width:100%">
-          <img class="card-img-top" src="img/main/parents.jpg" alt="Ussen & Aliya" style="width:100%">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1474476782206-48c6d5461aa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Ussen & Aliya" style="width:100%">
           <div class="card-body">
-            <h4 class="card-title">Ussen and Aliya</h4>
-            <p class="card-text">Parents to Alibek, Galymzhan and Dosbol, Ussen and Aliya got married in 1984 in the city of Shymkent.</p>
-            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+            <h4 class="card-title">USA</h4>
+            <p class="card-text">In 2010 Ussen and Aliya travelled to the US to attend the graduation ceremony of Galymzhan at Texas A&M Uinversity.</p>
+            <a href="#" class="btn btn-primary stretched-link">more photos</a>
           </div>
        </div>
       </div>
       <div class="col-sm-3">
         <div class="card bg-secondary text-white border-light" style="width:100%">
-          <img class="card-img-top" src="img/main/alibek.jpg" alt="Alibek & Karina" style="width:100%">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1474476782206-48c6d5461aa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Ussen & Aliya" style="width:100%">
           <div class="card-body">
-            <h4 class="card-title">Alibek and Karina</h4>
-            <p class="card-text">Parents to 3 kids - Alina, Aruzhan, Altair - got married in 2007 in the city of Shymkent</p>
-            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+            <h4 class="card-title">Thailand</h4>
+            <p class="card-text">In 2007 or 2008 Ussen and Aliya travelled to Thailand.</p>
+            <a href="#" class="btn btn-primary stretched-link">more photos</a>
           </div>
        </div>
       </div>
       <div class="col-sm-3">
         <div class="card bg-secondary text-white border-light" style="width:100%">
-          <img class="card-img-top" src="img/main/galymzhan2.jpg" alt="Galymzhan & Zhanara" style="width:100%">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1474476782206-48c6d5461aa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Ussen & Aliya" style="width:100%">
           <div class="card-body">
-            <h4 class="card-title">Galymzhan and Zhanara</h4>
-            <p class="card-text">Parents of Alua and Togzhan, got married in 2016 in the city of Shymkent</p>
-            <a href="galymzhan.html" class="btn btn-primary stretched-link">See Profile</a>
+            <h4 class="card-title">Dubai</h4>
+            <p class="card-text">In 2018 Ussen and Aliya travelled to Dubai for sightseeing and spend some time at the sea shore.</p>
+            <a href="#" class="btn btn-primary stretched-link">more photos</a>
           </div>
        </div>
       </div>
       <div class="col-sm-3">
         <div class="card bg-secondary text-white border-light" style="width:100%">
-          <img class="card-img-top" src="img/main/dosbol.jpg" alt="Dosbol" style="width:100%">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1474476782206-48c6d5461aa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Ussen & Aliya" style="width:100%">
           <div class="card-body">
-            <h4 class="card-title">Dosbol</h4>
-            <p class="card-text">Youngest son of Ussen and Aliya, was born in 1998; graduated from university in 2019 </p>
-            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+            <h4 class="card-title">Moscow</h4>
+            <p class="card-text">In 2010 Ussen and Aliya travelled to Moscow on the way to the US.</p>
+            <a href="#" class="btn btn-primary stretched-link">more photos</a>
           </div>
        </div>
       </div>
